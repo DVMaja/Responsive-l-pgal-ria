@@ -1,0 +1,37 @@
+main{
+    width: 80%;
+    max-width: 880px;
+    padding: 0;
+    margin: auto;
+}
+nav{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+.kiskep img, .nagykep img{
+    width: 100%;
+}
+header, main, footer, nav, article, section .kiskep .menu{
+    border: 1px solid black;
+    padding: 5px;
+}
+.kiskepek{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    
+}
+@media screen and (max-width: 600px) {
+    .kiskepek{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);     
+    }    
+  }
+
+  @media screen and (max-width: 400px) {
+    .kiskepek{        
+        grid-template-columns: 1fr;     
+    }   
+    nav{        
+        grid-template-columns: 1fr;
+    } 
+  }
